@@ -20,8 +20,8 @@ jobs:
       - name: Sync upstream updates
         run: |
           git config pull.rebase false
-          git config --global user.name 'AutoPull'
-          git config --global user.email 'autopull@cuojue.org'
+          git config --global user.name 'Luromiroa'
+          git config --global user.email 'Luromiroa@gmail.com'
           export oldver=$(git rev-parse --short HEAD)
           git pull https://github.com/LSPosed/LSPosed
           if [ $(git rev-parse --short HEAD) != $oldver ]; then
